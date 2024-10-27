@@ -1,0 +1,9 @@
+* {box-sizing: border-box;}
+
+body {
+       background: black;
+}
+
+h1, p, div {
+       color: white;
+}
