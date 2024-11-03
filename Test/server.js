@@ -1,4 +1,31 @@
+const http = require("http");
+const mysql = require("mysql");
 
+const connection = mysql.createConnection({
+       host: "localhost",
+       user: "Prince",
+       password: "Shal@1313",
+       database: "NodeJS"
+});
+
+connection.connect((err) => {
+       if (err) {
+              console.log(err);
+       }
+       else {
+              console.log("Connected.");
+       }
+       const _query = "select * from Test;";
+
+       connection.query(_query, (err, result, fields) => {
+              if (err) {
+                     console.log(err);
+              }
+              else {
+                     console.log(result[0].name, fields);
+              }
+       });
+});
 
 /*
 __________________________________________

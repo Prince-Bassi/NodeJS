@@ -1,0 +1,67 @@
+* {box-sizing: border-box;}
+
+body {
+       margin: 0;
+}
+
+header {
+       box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+       padding: 30px 20px;
+       margin-bottom: 20px;
+       display: flex;
+       flex-flow: row;
+       align-items: center;
+       justify-content: center;
+       background: orange;
+}
+
+header h1 {
+       color: white;
+       margin: -5px;
+       padding: 0;
+       font-size: 45px;
+}
+
+header .add {
+       position: absolute;
+       right: 50px;
+       border-radius: 10px;
+       border: 2px solid rgb(255, 255, 255);
+       background: orange;
+       font-size: 30px;
+       color: white;
+       cursor: pointer;
+       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+header .add:active {
+       background: white;
+       color: orange;
+}
+
+.contacts {
+       display: flex;
+       flex-flow: column wrap;
+}
+
+.contacts .contact {
+       display: flex;
+       flex-flow: row;
+       align-items: center;
+       padding: 5px 50px;
+       border-top: 1px solid black;
+}
+
+.contacts .contact .id {
+       margin-right: 100px;
+       font-size: 24px;
+}
+
+.contacts .contact .info {
+       display: flex;
+       flex-flow: row;
+       padding: 15px 10px;
+       justify-content: space-around;
+       width: 80%;
+       font-size: 19px;
+}
